@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ironclad - Educational App</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #1E293B;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 600px;
+      padding: 40px;
+      background-color: #0F172A;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #38BDF8;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin-bottom: 25px;
+      color: #cbd5e1;
+    }
+    .logo {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 20px;
+      background-color: #38BDF8;
+      border-radius: 20px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .loading {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border: 5px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      border-top-color: #38BDF8;
+      animation: spin 1s ease-in-out infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    .redirect-button {
+      display: inline-block;
+      background-color: #38BDF8;
+      color: #0F172A;
+      font-weight: bold;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: all 0.2s ease;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .redirect-button:hover {
+      background-color: #0ea5e9;
+      transform: translateY(-2px);
+    }
+  </style>
+  <script>
+    // Redirect to the correct path after a brief delay
+    window.onload = function() {
+      setTimeout(function() {
+        window.location.href = "./public/";
+      }, 1500);
+    };
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">I</div>
+    <h1>Ironclad Educational App</h1>
+    <p>Redirecting you to the application...</p>
+    <div class="loading"></div>
+    <p>If you're not redirected automatically, please click the button below:</p>
+    <a href="./public/" class="redirect-button">Go to App</a>
+  </div>
+</body>
+</html>

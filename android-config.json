@@ -1,0 +1,19 @@
+{
+  "androidManifest": {
+    "applicationLabel": "Ironclad",
+    "applicationTheme": "@style/AppTheme",
+    "permissions": [
+      "android.permission.INTERNET",
+      "android.permission.ACCESS_NETWORK_STATE"
+    ],
+    "minSdkVersion": 21,
+    "targetSdkVersion": 33
+  },
+  "buildOptions": {
+    "appName": "Ironclad",
+    "appVersionName": "1.0.0",
+    "appVersionCode": 1,
+    "appJavaPackageName": "com.ironclad.app",
+    "appSrcMainPath": "android/app/src/main"
+  }
+}

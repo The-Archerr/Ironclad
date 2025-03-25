@@ -1,0 +1,20 @@
+{
+  "appId": "com.ironclad.app",
+  "appName": "Ironclad",
+  "webDir": "dist/public",
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true,
+    "url": "http://10.0.2.2:5000",
+    "hostname": "10.0.2.2:5000"
+  },
+  "android": {
+    "buildOptions": {
+      "keystorePath": "android/app/keystore.jks",
+      "keystorePassword": "ironcladapp",
+      "keystoreAlias": "ironclad",
+      "keystoreAliasPassword": "ironcladapp"
+    }
+  },
+  "loggingBehavior": "debug"
+}
